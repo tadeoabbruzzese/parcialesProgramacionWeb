@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chase Atlantic - Edición Limitada</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/chase-icon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="base.css">
+
+</head>
+<body>
+
+    <header id="inicio">
+        <img src="/img/albumchase1.jpg" alt="Portada animada de Chase Atlantic" class="portada">
+        <h1>Nuevo Álbum: "LOST IN HEAVEN"</h1>
+        <p>¡Edición Limitada Disponible Ahora!</p>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre el Artista</a>
+        <a href="#album">El Álbum</a>
+        <a href="#edicion">Edición Limitada</a>
+        <a href="#contacto">Preventa</a>
+    </nav>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre Chase Atlantic</h2>
+            <p>Chase Atlantic es una banda australiana que fusiona sonidos alternativos, R&B oscuro y synthwave moderno. Influenciados por The Neighbourhood y Tame Impala, su estilo hipnótico y melancólico los distingue en la escena internacional.</p>
+    
+            <figure>
+                <img src="img/chaselive.jpg" alt="Chase Atlantic en vivo" class="foto-artista">
+            </figure>
+
+    
+            <div class="conoce-mas">
+                <a href="conoce-mas.html" class="boton-secundario">Conocé más</a>
+            </div>
+        </section>
+
+    <section id="album">
+        <h2>El Álbum - "LOST IN HEAVEN"</h2>
+        <ul class="canciones">
+            <li>01. Hours Lost</li>
+            <li>02. Ricochet</li>
+            <li>03. You</li>
+            <li>04. Die For Me</li>
+            <li>05. Night Calls</li>
+        </ul>
+        <div class="audio-preview">
+            <p>Escucha un adelanto:</p>
+            <audio controls>
+                <source src="audio/audiochaseproject.mp4" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </div>
+    </section>
+
+    <section id="edicion">
+        <h2>Edición Limitada</h2>
+        <ul>
+            <li>Vinilo de color azul neón.</li>
+            <li>Booklet con letras exclusivas y arte inédito.</li>
+            <li>Acceso anticipado a conciertos.</li>
+            <li>Pack exclusivo de Merchandising.</li>
+        </ul>
+    </section>
+
+    <section id="contacto">
+        <h2>Preventa</h2>
+        <p>Reserva tu copia exclusiva antes que se agoten.</p>
+        <form action="confirmacion.html" method="get">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Reservar Ahora</button>
+        </form>
+
+    </section>
+    </main>
+    <footer>
+        <p>© 2025 Chase Atlantic. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+header .portada {
+    width: 300px;
+    height: auto;
+    animation: pulse 3s infinite;
+}
+
+
+nav a {
+    color: #68e0cf;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+
+ul.canciones li {
+    list-style: none;
+    background: #2f2f4f;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.audio-preview {
+    margin-top: 1rem;
+}
+
+.audio-preview audio {
+    width: 100%;
+}
+
+
+input, button {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+}
+
+
+button:hover {
+    background: #50c0af;
+    transform: scale(1.05);
+}
+
+
+.foto-artista {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+.boton-secundario {
+    display: inline-block;
+    margin: 1.5rem auto 0 auto;
+    padding: 0.8rem 1.5rem;
+    background-color: transparent;
+    color: #68e0cf;
+    border: 2px solid #68e0cf;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+
+.boton-secundario:hover {
+    background-color: #68e0cf;
+    color: #111;
+}
+
+.foto-artista {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foto-artista:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+}
+
+.discografia{
+    text-align: center;
+    text-decoration: none;
+}
+
+.discografia ul {
+    list-style: none;
+}
+
+
+a:hover {
+    color: #68e0cf; /* o el color que prefieras en hover */
+    text-decoration: underline;
+}
+
+.conoce-mas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+/*animacion de la portada*/
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+ 
+
+/*responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    header .portada {
+        width: 90%;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    input, button, textarea {
+        width: 100%;
+    }
+}
+
