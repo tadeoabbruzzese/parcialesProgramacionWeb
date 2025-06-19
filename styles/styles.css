@@ -135,6 +135,42 @@ a:hover {
     color: #ccc;
 }
 
+.galeria-merch {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.galeria-merch figure {
+    background: #1a1a2e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(104, 224, 207, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.galeria-merch figure:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(104, 224, 207, 0.4);
+}
+
+.galeria-merch img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.galeria-merch figcaption {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    color: #ccc;
+    font-style: italic;
+}
+
+
+
 /*animacion de la portada*/
 
 @keyframes pulse {
