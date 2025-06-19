@@ -99,7 +99,7 @@ button:hover {
 
 
 a:hover {
-    color: #68e0cf; /* o el color que prefieras en hover */
+    color: #68e0cf; 
     text-decoration: underline;
 }
 
@@ -108,6 +108,31 @@ a:hover {
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+}
+
+.iframe-concierto {
+    margin: 2rem auto;
+    text-align: center;
+    max-width: 900px;
+}
+
+.iframe-concierto iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(104, 224, 207, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.iframe-concierto iframe:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(104, 224, 207, 0.4);
+}
+
+.iframe-concierto figcaption {
+    margin-top: 0.8rem;
+    font-style: italic;
+    color: #ccc;
 }
 
 /*animacion de la portada*/
